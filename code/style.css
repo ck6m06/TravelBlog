@@ -1,0 +1,244 @@
+@media only screen and (min-width: 375px) {
+    /* +++++ */
+    body{
+        margin:0;
+    }
+     /* +++++ */ 
+
+    .whole {
+        margin: 0px;
+        background-color: white;
+    }
+
+    #preloader {
+        transition-duration: 3s;
+        position: fixed;
+        background-color: rgb(5, 41, 53);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation-name: animate;
+        animation-duration: 3s;
+        z-index: 100;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #preloader p {
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        font-weight: bold;
+        z-index: -1;
+        position: fixed;
+        top: 30%;
+        left: 30%;
+    }
+
+    /* https://www.php.cn/css-tutorial-486030.html */
+    @keyframes animate {
+        0%{opacity:1;}
+        99%{opacity:1;}
+        100%{opacity:0;}
+    }
+
+    .top {
+        text-align: center;
+        /* margin: 0% 0% 2% 0%; */
+        margin: 0% 0% 0% 0%;
+    }
+
+    .top img {
+        width: 100%;
+        /* height: 650px; */
+        /* height: 550px; */
+        height: 600px;
+        opacity: 0.8;
+        z-index: -1;
+
+        /* +++++ */
+        display: block;
+    }
+
+    .top p {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        color: white;
+        font-size: 100px;
+        font-weight: bold;
+        z-index: 1;
+        margin: 0px;
+        width:fit-content;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:12px;
+        padding-right:12px;
+        border-color: white;
+        border-style:solid;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* +++++ */
+    .navbar{
+        position:sticky;
+        top:0;
+    }
+    ul.nav-menu{
+        margin:0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #C2E8EF;
+        /* background-color: #CEEFEB; */
+        /* background-color: #F0F8FF; */
+    }
+    
+    li.nav-item{
+        list-style: none;
+        font-size:20px;
+        padding-right:25px;
+    }
+    .nav-item > a.nav-link{
+        color:#3d5a80;
+        font-weight: bold;
+        text-decoration: none;
+        width:fit-content;
+        /* ++ */
+        /* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+        display: inline-block;
+        position: relative;
+    }
+    
+    a.nav-link:hover{
+        color:#79B4A9;
+        font-weight:bold;
+    }
+    
+    a.nav-link::after {
+        content: '';
+        position:absolute;
+        width:100%;
+        transform:scaleX(0);
+        height:2px;
+        bottom:0;
+        left:0;
+        background-color: #79B4A9;
+        transition: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    a.nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+    /* ++ */
+
+    /* home content */
+
+    .content h1 {
+        text-align: center;
+        font-size: 600%;
+        text-shadow: 5px 5px 5px gray;
+        color: #065279;
+        /* #065279; */
+    }
+
+    .content p {
+        text-align: center;
+        font-size: 200%;
+        font-weight: bold;
+        color:#065279;
+    }
+    
+    .buttoncenter {
+        display:flex;
+        justify-content: center;
+    }
+
+    .startbutton {
+        background-color: white;
+        color: #8CABD9;
+        border: solid #8CABD9;
+        border-radius: 10px;
+        font-size: 200%;
+        font-weight: bold;
+        padding: 16px 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .startbutton:hover {
+        background-color:#8CABD9;
+        color: white;
+        transition: 0.4s;
+        box-shadow: 5px 5px 2px rgb(188, 188, 188);
+    }
+
+    .footer {
+        /* border-top: 1px solid black;
+        background-color: rgb(4, 65, 98); */
+        background-color:#2a6f97; 
+        color: white;
+        margin: 5% 0% 0% 0%;
+    }
+
+    .footer p { 
+        text-align: center;
+    }
+
+    .social-media {
+        text-align: center;
+        padding: 2% 0px 0px 0px;
+    }
+
+    #ig img {
+        width: 2.3%;
+    }
+
+    #fb img, #tw img {
+        width: 2%;
+        border-radius: 30%;
+        position: relative;
+        bottom: 2px;
+    }
+
+    #contact-info {
+        color: white;
+        font-size: 150%;
+        padding: 10px;
+    }
+
+    #contact-info > p {
+        border-bottom: 1px solid white;
+        margin: 0% 40%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    /* +++++ */
+    body{
+        margin:0;
+    }
+    .top p {
+        position: absolute;
+        top: 250px;
+        left: 400px;
+        margin: 0px;
+        width:fit-content;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:12px;
+        padding-right:12px;
+        border-color: white;
+        border-style:solid;
+    }
+}

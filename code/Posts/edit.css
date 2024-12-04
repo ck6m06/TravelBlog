@@ -1,0 +1,132 @@
+body{
+    margin:0px;
+}
+#location-title{
+    font-weight:normal;
+}
+.title1{
+    text-align: center;
+    font-size: 37px;
+    padding: 14px;
+    background-color: #C2E8EF;
+    color:#3d5a80;
+    margin-top: 0px;
+}
+.icon{
+    width:2.5%;
+    position: relative;
+    right:5px;
+    top:2.5px;
+}
+.new-post {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+}
+
+#cover{
+    margin: 30px 250px 30px 250px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.title{
+    margin: 15px 100px;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.img-upload{
+    margin: 10px 100px 35px 100px;
+}
+
+.slide-photos-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    /* flex-direction: column; */ 
+}
+
+.introduction{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 20% 25px 20%;
+}
+
+.experience1, .experience2 {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow:rgba(128, 128, 128, 0.523) 8px 8px 20px; /* same in the original blog post style */
+}
+
+.sub-slide-photos-section {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* align-items: bottom; */
+    align-self: flex-end;
+}
+#sub-slide-photos-section-5{
+   position: relative;
+   right:23%;
+}
+
+/* .exp-section {
+    display: flex;
+    flex-direction: center;
+} */
+
+#tips-section{
+    text-align: center;
+}
+
+.slidephotos {
+    text-align: bottom;
+    padding: 9.5% 2% 0% 3%;
+    vertical-align: bottom;
+}
+
+/* input[name="edit"] {
+    position: absolute;
+    right: 20%;
+} */
+
+.button {
+    font-size: 15px;
+    background-color: #C2E8EF;
+    color:#3d5a80;
+    border: 1.9px solid #3d5a80;
+    padding:2px;
+    border-radius: 3px;
+    position: relative;
+    left:50%;
+    margin-bottom:5%;
+}
+.button:hover{
+    background-color: #3d5a80;
+    color:#C2E8EF;
+}
+
+
+input[type=text]:focus{
+    transition: 0.5s;
+    border: 2px solid;
+    background-color: rgb(197, 220, 233);
+}
+
+/* all the form->textarea focus style */
+textarea:focus{
+    transition: 0.5s;
+    border: 2px solid;
+    background-color: rgb(235, 244, 250);
+}

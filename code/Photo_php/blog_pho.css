@@ -1,0 +1,381 @@
+body{
+    /* font-family: 'Alegreya SC';  */
+    width: auto;
+    margin:0;
+}
+
+/* background-image for beginning */
+.bg{
+    /* +++++*/
+    position:relative;
+    display: block;
+    width: 100%;
+    opacity:0.75;
+    height:40%; 
+    height:30em;
+    /* height: 480px; */
+    /* margin-bottom: 45px; */
+    /* backdrop-filter: rgb(255,255,255,0.5); */
+}
+
+/* h1{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-style: Bradley Hand ITC;
+    font-weight: normal;
+    font-size: 65px;
+    padding: 0px 12px 0px 12px;
+    border-color: white;
+    border-style: solid;
+} */
+
+/* +++++ */
+.photo-text{
+    position:absolute;
+    top:0;
+    left:0; 
+    color:white;
+    /* font-style: Bradley Hand ITC; */
+    font-weight: normal;
+    font-size: 6.5em;
+    /* padding-top:0.625em;
+    padding-bottom: 0.625em;*/
+    padding-left:0.3em;
+    padding-right:0.3em; 
+    border-color: white;
+    border-style:solid;
+    margin-left:33.8%;
+    margin-top:12.5%;
+    width:fit-content;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    margin-bottom:10%;
+}
+ul.nav-menu{
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E8EF;
+    /* background-color: #CEEFEB; */
+    /* background-color: #F0F8FF; */
+}
+
+li.nav-item{
+    list-style: none;
+    font-size:20px;
+    padding-right:25px;
+}
+a.nav-link {
+    color:#3d5a80;
+    font-weight: bold;
+    text-decoration: none;
+    width:fit-content;
+/* ++ */
+/* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+    display: inline-block;
+    position: relative;
+}
+
+a.nav-link::after {
+    content: '';
+    position:absolute;
+    width:100%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color: #79B4A9;
+    transition: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+/* ++ */
+a.nav-link:hover {
+    color:#79B4A9;
+    font-weight:bold;
+}
+/* +++++ */
+
+/* main frame */
+.main{
+    /* display:table; */
+    /* margin-top:10%;*/
+    display:flex;
+    flex-direction: column;
+    /* --margin:0 auto;  */margin: 0px;
+    align-items: center;
+}
+
+/* 1st Alishan */
+.main_photo{
+
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width:42%;
+    text-align: center;
+    /* ++ */padding: 20px;
+    /* ++ */margin: 50px;
+    /* ++ */text-decoration: none;
+
+    /* width:32.1875em; */
+    /* height:23.75em; */
+    /* width: 515px; */
+    /* height:80%;  */
+    /* height: 380px; */
+
+}
+
+ /* frame  */
+.mphoto{
+    margin: 1.2em;
+}
+
+/* image */
+.photoo{
+    /* width: 470px; 
+    height:300px; */
+    width:100%;
+    height:100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-style: solid;
+    justify-content: center;
+}
+
+/* place */
+.placename{
+    font-weight: bold;
+    text-align: center;
+    line-height: 0px;
+    font-size: 1em;
+    /* ++ */color: black;
+    /* ++ */margin: 10px;
+    /* width: fit-content; */
+}
+
+/* 1st Alishan -> hover*/
+.main_photo:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+/* image -> hover */
+.photoo:hover{
+    border-radius: 10%;
+}
+
+/* 2nd Tamsui */
+#main_photo2{
+    margin-top: 3.125em;
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    /* width: 515px;
+    height: 380px; */
+    width:42%;
+    text-align: center;
+}
+
+/* 2nd Tamsui -> hover*/
+#main_photo2:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+/* 3rd Hualien */
+#main_photo3{
+    margin-top: 50px;
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    /* width: 515px;
+    height: 380px; */
+    width:42%;
+    text-align: center;
+}
+
+/* 3rd Hualien ->hover*/
+#main_photo3:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+/* 4th Tainan */
+#main_photo4{
+    margin-top: 50px;
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    /* width: 515px;
+    height: 380px; */
+    width:42%;
+    text-align: center;
+}
+
+/* 4th Tainan ->hover */
+#main_photo4:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+/* 5th Malaysia */
+#main_photo5{
+    margin-top: 50px;
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    /* width: 515px;
+    height: 380px; */
+    width:42%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 5th Malaysia ->hover*/
+#main_photo5:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+/* 6th lotus pond */
+#main_photo6{
+    margin-top: 50px;
+    justify-items: center;
+    border-color: lightgrey;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    /* width: 515px;
+    height: 380px; */
+    width:42%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 6th lotus pond ->hover*/
+#main_photo6:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 10px #888888; 
+    /* border-color: darkslategrey; */
+    background-color: rgb(211, 234, 245);
+    transform: scale(1.20);
+    transition: 0.5s;
+    color: rgb(16, 87, 179);
+    letter-spacing: 15px;
+}
+
+.main{
+    padding-bottom:3%;
+}
+
+.footer {
+    /* border-top: 1px solid black; */
+    background-color:#2a6f97; 
+    color: white;
+    margin: 5% 0% 0% 0%;
+}
+
+.footer p { 
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+    padding: 2% 0px 0px 0px;
+}
+
+#ig img {
+    width: 2.3%;
+}
+
+#fb img, #tw img {
+    width: 2%;
+    border-radius: 30%;
+    position: relative;
+    bottom: 2px;
+}
+
+#contact-info {
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+
+#contact-info > p {
+    border-bottom: 1px solid white;
+    margin: 0% 40%;
+}
+
+.butset{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.but:hover{
+    font-weight: bold;
+    color: rgb(16, 87, 179);
+}
+
+.but{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}

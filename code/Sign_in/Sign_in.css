@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    /* width:1366px; */
+}
+.tips-photo{
+    position:relative;
+    width:100%;
+    object-fit: fill;
+    opacity:0.75;   
+    display:block; 
+}
+.photo-text{
+    font-size: 6.5em;
+    color:white;
+    position:absolute;
+    top:0;
+    left:0; 
+    margin-left:39.3%;
+    margin-top:9.5%;
+    width:fit-content;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left:12px;
+    padding-right:12px;
+    border-color: white;
+    border-style:solid;
+}
+.navbar{
+    position:sticky;
+    top:0;
+}
+ul.nav-menu{
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E8EF;
+    /* background-color: #CEEFEB; */
+    /* background-color: #F0F8FF; */
+}
+
+li.nav-item{
+    list-style: none;
+    font-size:20px;
+    padding-right:25px;
+}
+a.nav-link{
+    color:#3d5a80;
+    font-weight: bold;
+    text-decoration: none;
+    width:fit-content;
+/* ++ */
+/* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+    display: inline-block;
+    position: relative;
+}
+a.nav-link::after{
+    content: '';
+    position:absolute;
+    width:100%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color: #79B4A9;
+    transition: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a.nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+/* ++ */
+a.nav-link:hover{
+    color:#79B4A9;
+    font-weight:bold;
+}
+
+form{
+    width: 25%;
+    margin:5% auto;
+    padding:3%;
+    background-color: #E7F0F4;
+}
+.sign-in{
+    font-size: 25px;
+    text-align: center;
+    color:#3d5a80;
+    font-weight: bold;
+}
+input[type="submit"]{
+    margin-left:45%;
+}
+.wrong{
+    color:red;
+}
+
+.button {
+    color:white;
+    background-color: #3d5a80;
+    position:relative;
+    left: -10px;
+    top:2px;
+    border-radius: 9px;
+    border-color: #3d5a80;
+    padding:6px;
+}
+/* .button:hover{
+    color:#3d5a80;
+    background-color: white;
+} */
+label{
+    color:#3d5a80;
+    font-weight: bold;
+}

@@ -1,0 +1,204 @@
+body{
+    background-color: white;
+    margin:0;
+}
+
+.beginning{
+    background-color: white;
+    margin: 0px;
+    position: relative;
+    height: 480px;
+    width: auto;
+}
+
+/* backgourn-image for beginning */
+.back{
+    width: 100%;
+    height: 480px;
+    margin-bottom: 20px;
+    /*  */
+    z-index: -1;
+    /*  */
+}
+
+.beginning > h1{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-style: Bradley Hand ITC;
+    font-weight: normal;
+    font-size: 65px;
+    padding: 0px 12px 0px 12px;
+    border-color: white;
+    border-style: solid;
+}
+
+/* frame for mail infrom */
+#mail{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#message {
+    color: darkblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+}
+.right {
+    height: 400px;
+    width: 400px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    border-radius: 70%;
+    background-color: rgb(220, 240, 250);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+/* mail_icon */
+.icon{
+    z-index: 2;
+    width: 100px; 
+    height: 100px;
+}
+
+/* frame for text"Email" */
+.box{
+    margin: 0px 0px 20px 0px;
+}
+
+/* frame for all gmails */
+.gmail{
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px;
+}
+
+/* add */
+.gmail p {
+    margin: 0px;
+}
+
+/* change id to class */
+.Comment_box{
+    margin-left: 100px
+}
+
+/* frame/style for the text"MAKE CONTACT" */
+
+.text{
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 25px;
+}
+
+/* another icon use in the page */
+.icon2{
+    z-index: 2;
+    width: 50px; 
+    height: 50px;
+}
+
+/* form style */
+input{
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: rgb(220, 240, 250);
+    caret-color: rgb(104, 184, 235);
+    outline-color: rgb(104, 184, 235);
+    outline-width: 2px;
+}
+
+textarea{
+    font-size: 16px;
+    margin-top:-10px;
+    background-color:rgb(220, 240, 250);
+    border-radius: 10px;
+    border-color: rgb(220, 240, 250);
+    outline-color: rgb(104, 184, 235);
+    caret-color: rgb(104, 184, 235);
+}
+
+.centerbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.clickbut{
+    border-color: rgb(104, 184, 235);
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+}
+ul.nav-menu{
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2E8EF;
+}
+
+li.nav-item{
+    list-style: none;
+    font-size:20px;
+    padding-right:25px;
+}
+a.nav-link {
+    color:#3d5a80;
+    font-weight: bold;
+    text-decoration: none;
+    width:fit-content;
+/* ++ */
+/* https://www.30secondsofcode.org/css/s/hover-underline-animation */
+    display: inline-block;
+    position: relative;
+}
+
+a.nav-link::after {
+    content: '';
+    position:absolute;
+    width:100%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color: #79B4A9;
+    transition: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+/* ++ */
+a.nav-link:hover {
+    color:#79B4A9;
+    font-weight:bold;
+}
